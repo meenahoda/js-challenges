@@ -64,7 +64,7 @@
         select.addEventListener('change', () => { update(select.value) })
 
         xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
+            if (this.readyState === 4 && this.status === 200) {
                 const response = document.createElement('div')
                 if (this.responseText) {
                     response.innerHTML = this.responseText
