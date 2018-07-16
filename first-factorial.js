@@ -5,7 +5,9 @@ const firstFactorial = number => {
         number -= 1
     }
 
-    return factors.reduce((a, b) => a * b)
+    return factors.length > 0
+        ? factors.reduce((a, b) => a * b)
+        : undefined
 }
 
 module.exports = firstFactorial

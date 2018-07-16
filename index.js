@@ -20,9 +20,11 @@ select.addEventListener('change', () => { update(select.value) })
 xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         const response = document.createElement('div')
-        response.innerHTML = this.responseText
-        response.setAttribute('class', 'alert alert-success')
-        resultArea.appendChild(response)
+        if (this.responseText) {
+            response.innerHTML = this.responseText
+            response.setAttribute('class', 'alert alert-success')
+            resultArea.appendChild(response)
+        }
     }
 }
 

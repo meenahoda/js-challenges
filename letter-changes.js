@@ -4,7 +4,7 @@ const PUNCTUATION = '.,\/#!$%\^&\*;:{}=\-_`~() '.split('')
 const VOWELS = 'aeiou'.split('')
 
 const letterChanges = string => {
-    return string
+    return string && string
         .toLowerCase()
         .split('')
         .map((char, i) => {
