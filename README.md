@@ -5,5 +5,5 @@ $ npm run start
 ```
 
 ``` bash
-$ node_modules/.bin/cypress open
+$ npm run test
 ```
