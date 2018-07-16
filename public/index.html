@@ -23,12 +23,12 @@
         <div class="form-group">
             <select class="form-control" id="challengeSlct">
                 <option>Choose a challenge...</option>
-                <option id="longestWord">Longest Word</option>
-                <option id="firstFactorial">First Factorial</option>
-                <option id="firstReverse">First Reverse</option>
-                <option id="letterChanges">Letter Changes</option>
-                <option id="simpleAdding">Simple Adding</option>
-                <option id="letterCapitalise">Letter Capitalise</option>
+                <option value="longestWord">Longest Word</option>
+                <option value="firstFactorial">First Factorial</option>
+                <option value="firstReverse">First Reverse</option>
+                <option value="letterChanges">Letter Changes</option>
+                <option value="simpleAdding">Simple Adding</option>
+                <option value="letterCapitalise">Letter Capitalise</option>
             </select>
         </div>
 
@@ -76,27 +76,27 @@
 
         function update(selected) {
             switch (selected) {
-                case 'Longest Word':
+                case 'longestWord':
                     run('longest-word', textInput)
                     append('text')
                     break
-                case 'First Factorial':
+                case 'firstFactorial':
                     run('first-factorial', numInput)
                     append('number')
                     break
-                case 'First Reverse':
+                case 'firstReverse':
                     run('first-reverse', textInput)
                     append('text')
                     break
-                case 'Letter Changes':
+                case 'letterChanges':
                     run('letter-changes', textInput)
                     append('text')
                     break
-                case 'Simple Adding':
+                case 'simpleAdding':
                     run('simple-adding', numInput)
                     append('number')
                     break
-                case 'Letter Capitalise':
+                case 'letterCapitalise':
                     run('letter-capitalise', textInput)
                     append('text')
                     break
